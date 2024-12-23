@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://demo.ragflow.io/">
-<img src="web/src/assets/logo-with-text.png" width="520" alt="Lithium AI logo">
+<img src="https://x.com/Lithium_AI/photo" width="520" alt="Lithium AI logo">
 </a>
 </div>
 
@@ -22,19 +22,10 @@
     </a>
 </p>
 
-<h4 align="center">
-  <a href="https://ragflow.io/docs/dev/">Document</a> |
-  <a href="https://github.com/Lithium-AI/ragflow/issues/162">Roadmap</a> |
-  <a href="https://twitter.com/Lithium-AI">Twitter</a> |
-  <a href="https://discord.gg/4XxujFgUN7">Discord</a> |
-  <a href="https://demo.ragflow.io">Demo</a>
-</h4>
-
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-- 💡 [What is RAGFlow?](#-what-is-ragflow)
-- 🎮 [Demo](#-demo)
+- 💡 [What is Lithium-AI?](#-what-is-Lithium-AI)
 - 📌 [Latest Updates](#-latest-updates)
 - 🌟 [Key Features](#-key-features)
 - 🔎 [System Architecture](#-system-architecture)
@@ -43,27 +34,15 @@
 - 🔧 [Build a docker image without embedding models](#-build-a-docker-image-without-embedding-models)
 - 🔧 [Build a docker image including embedding models](#-build-a-docker-image-including-embedding-models)
 - 🔨 [Launch service from source for development](#-launch-service-from-source-for-development)
-- 📚 [Documentation](#-documentation)
-- 📜 [Roadmap](#-roadmap)
-- 🏄 [Community](#-community)
-- 🙌 [Contributing](#-contributing)
 
 </details>
 
-## 💡 What is RAGFlow?
+## 💡 What is Lithium-AI?
 
-[RAGFlow](https://ragflow.io/) is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document
+Lithium-AI is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document
 understanding. It offers a streamlined RAG workflow for businesses of any scale, combining LLM (Large Language Models)
 to provide truthful question-answering capabilities, backed by well-founded citations from various complex formatted
 data.
-
-## 🎮 Demo
-
-Try our demo at [https://demo.ragflow.io](https://demo.ragflow.io).
-<div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/Lithium-AI/ragflow/assets/7248/2f6baa3e-1092-4f11-866d-36f6a9d075e5" width="1200"/>
-<img src="https://github.com/user-attachments/assets/504bbbf1-c9f7-4d83-8cc5-e9cb63c26db6" width="1200"/>
-</div>
 
 ## 🔥 Latest Updates
 
@@ -86,7 +65,7 @@ releases! 🌟
 
 ### 🍭 **"Quality in, quality out"**
 
-- [Deep document understanding](./deepdoc/README.md)-based knowledge extraction from unstructured data with complicated
+- Deep document understanding based knowledge extraction from unstructured data with complicated
   formats.
 - Finds "needle in a data haystack" of literally unlimited tokens.
 
@@ -155,15 +134,15 @@ releases! 🌟
 2. Clone the repo:
 
    ```bash
-   $ git clone https://github.com/Lithium-AI/ragflow.git
+   $ git clone https://github.com/GregGentschev/Lithium-AI
    ```
 
 3. Start up the server using the pre-built Docker images:
 
-   > The command below downloads the `v0.15.0-slim` edition of the RAGFlow Docker image. Refer to the following table for descriptions of different RAGFlow editions. To download an RAGFlow edition different from `v0.15.0-slim`, update the `RAGFLOW_IMAGE` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `RAGFLOW_IMAGE=Lithium-AI/ragflow:v0.15.0` for the full edition `v0.15.0`.
+   > The command below downloads the `v0.15.0-slim` edition of the Lithium-AI Docker image. Refer to the following table for descriptions of different Lithium-AI editions. To download an RAGFlow edition different from `v0.15.0-slim`, update the `Lithium-AI` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `Lithium-AI=GregGentschev/Lithium-AI:v0.15.0` for the full edition `v0.15.0`.
 
    ```bash
-   $ cd ragflow
+   $ cd Lithium-AI
    $ docker compose -f docker/docker-compose.yml up -d
    ```
 
@@ -177,18 +156,12 @@ releases! 🌟
 4. Check the server status after having the server up and running:
 
    ```bash
-   $ docker logs -f ragflow-server
+   $ docker logs -f Lithium-AI-server
    ```
 
    _The following output confirms a successful launch of the system:_
 
    ```bash
-
-         ____   ___    ______ ______ __               
-        / __ \ /   |  / ____// ____// /____  _      __
-       / /_/ // /| | / / __ / /_   / // __ \| | /| / /
-      / _, _// ___ |/ /_/ // __/  / // /_/ /| |/ |/ / 
-     /_/ |_|/_/  |_|\____//_/    /_/ \____/ |__/|__/ 
 
     * Running on all addresses (0.0.0.0)
     * Running on http://127.0.0.1:9380
@@ -203,8 +176,6 @@ releases! 🌟
    HTTP serving port `80` can be omitted when using the default configurations.
 6. In [service_conf.yaml.template](./docker/service_conf.yaml.template), select the desired LLM factory in `user_default_llm` and update
    the `API_KEY` field with the corresponding API key.
-
-   > See [llm_api_key_setup](https://ragflow.io/docs/dev/llm_api_key_setup) for more information.
 
    _The show is on!_
 
@@ -322,24 +293,3 @@ docker build -f Dockerfile -t Lithium-AI/ragflow:nightly .
 
    ![](https://github.com/user-attachments/assets/0daf462c-a24d-4496-a66f-92533534e187)
 
-## 📚 Documentation
-
-- [Quickstart](https://ragflow.io/docs/dev/)
-- [User guide](https://ragflow.io/docs/dev/category/guides)
-- [References](https://ragflow.io/docs/dev/category/references)
-- [FAQ](https://ragflow.io/docs/dev/faq)
-
-## 📜 Roadmap
-
-See the [RAGFlow Roadmap 2024](https://github.com/Lithium-AI/ragflow/issues/162)
-
-## 🏄 Community
-
-- [Discord](https://discord.gg/4XxujFgUN7)
-- [Twitter](https://twitter.com/Lithium-AI)
-- [GitHub Discussions](https://github.com/orgs/Lithium-AI/discussions)
-
-## 🙌 Contributing
-
-RAGFlow flourishes via open-source collaboration. In this spirit, we embrace diverse contributions from the community.
-If you would like to be a part, review our [Contribution Guidelines](./CONTRIBUTING.md) first.
