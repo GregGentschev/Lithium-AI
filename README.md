@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/twitter/follow/Lithium_AI?logo=X&color=%20%23f5f5f5" alt="follow on X(Twitter)">
     </a>
     <a href="https://www.lithiumai.xyz/"  target="_blank">
-        <img src="https://github.com/GregGentschev/Lithium-AI/blob/main/agent/test/logo192.png" width="2">
+        <img src="https://github.com/GregGentschev/Lithium-AI/blob/main/agent/test/logo192.png" width="2" alt="Lithiumai.xyz">
     </a>
     <a href="https://hub.docker.com/r/Lithium-AI/Lithium_AI" target="_blank">
         <img src="https://img.shields.io/badge/docker_pull-Lithium_AI:v0.15.0-brightgreen" alt="docker pull GregGentschev/Lithium-AI:v0.15.0">
