@@ -1,6 +1,5 @@
 <div align="center">
 <img src="https://x.com/Lithium_AI/photo" width="520" alt="Lithium AI">
-</a>
 </div>
 
 <p align="center">
