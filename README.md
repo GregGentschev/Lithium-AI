@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://x.com/Lithium_AI/photo" width="520" alt="Lithium AI">
+<img src="https://github.com/GregGentschev/Lithium-AI/blob/main/agent/test/logo192.png" width="520" alt="Lithium AI">
 </div>
 
 <p align="center">
