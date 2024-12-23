@@ -13,27 +13,27 @@
 </p>
 
 <p align="center">
-    <a href="https://x.com/intent/follow?screen_name=infiniflowai" target="_blank">
-        <img src="https://img.shields.io/twitter/follow/infiniflow?logo=X&color=%20%23f5f5f5" alt="follow on X(Twitter)">
+    <a href="https://x.com/intent/follow?screen_name=Lithium-AI" target="_blank">
+        <img src="https://img.shields.io/twitter/follow/Lithium-AI?logo=X&color=%20%23f5f5f5" alt="follow on X(Twitter)">
     </a>
     <a href="https://demo.ragflow.io" target="_blank">
         <img alt="Static Badge" src="https://img.shields.io/badge/Online-Demo-4e6b99">
     </a>
-    <a href="https://hub.docker.com/r/infiniflow/ragflow" target="_blank">
-        <img src="https://img.shields.io/badge/docker_pull-ragflow:v0.15.0-brightgreen" alt="docker pull infiniflow/ragflow:v0.15.0">
+    <a href="https://hub.docker.com/r/Lithium-AI/ragflow" target="_blank">
+        <img src="https://img.shields.io/badge/docker_pull-ragflow:v0.15.0-brightgreen" alt="docker pull Lithium-AI/ragflow:v0.15.0">
     </a>
-    <a href="https://github.com/infiniflow/ragflow/releases/latest">
-        <img src="https://img.shields.io/github/v/release/infiniflow/ragflow?color=blue&label=Latest%20Release" alt="Latest Release">
+    <a href="https://github.com/Lithium-AI/ragflow/releases/latest">
+        <img src="https://img.shields.io/github/v/release/Lithium-AI/ragflow?color=blue&label=Latest%20Release" alt="Latest Release">
     </a>
-    <a href="https://github.com/infiniflow/ragflow/blob/main/LICENSE">
+    <a href="https://github.com/Lithium-AI/ragflow/blob/main/LICENSE">
         <img height="21" src="https://img.shields.io/badge/License-Apache--2.0-ffffff?labelColor=d4eaf7&color=2e6cc4" alt="license">
     </a>
 </p>
 
 <h4 align="center">
   <a href="https://ragflow.io/docs/dev/">Document</a> |
-  <a href="https://github.com/infiniflow/ragflow/issues/162">Roadmap</a> |
-  <a href="https://twitter.com/infiniflowai">Twitter</a> |
+  <a href="https://github.com/Lithium-AI/ragflow/issues/162">Roadmap</a> |
+  <a href="https://twitter.com/Lithium-AI">Twitter</a> |
   <a href="https://discord.gg/4XxujFgUN7">Discord</a> |
   <a href="https://demo.ragflow.io">Demo</a>
 </h4>
@@ -69,7 +69,7 @@ data.
 
 Try our demo at [https://demo.ragflow.io](https://demo.ragflow.io).
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/infiniflow/ragflow/assets/7248/2f6baa3e-1092-4f11-866d-36f6a9d075e5" width="1200"/>
+<img src="https://github.com/Lithium-AI/ragflow/assets/7248/2f6baa3e-1092-4f11-866d-36f6a9d075e5" width="1200"/>
 <img src="https://github.com/user-attachments/assets/504bbbf1-c9f7-4d83-8cc5-e9cb63c26db6" width="1200"/>
 </div>
 
@@ -122,7 +122,7 @@ releases! 🌟
 ## 🔎 System Architecture
 
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/infiniflow/ragflow/assets/12318111/d6ac5664-c237-4200-a7c2-a4a00691b485" width="1000"/>
+<img src="https://github.com/Lithium-AI/ragflow/assets/12318111/d6ac5664-c237-4200-a7c2-a4a00691b485" width="1000"/>
 </div>
 
 ## 🎬 Get Started
@@ -163,12 +163,12 @@ releases! 🌟
 2. Clone the repo:
 
    ```bash
-   $ git clone https://github.com/infiniflow/ragflow.git
+   $ git clone https://github.com/Lithium-AI/ragflow.git
    ```
 
 3. Start up the server using the pre-built Docker images:
 
-   > The command below downloads the `v0.15.0-slim` edition of the RAGFlow Docker image. Refer to the following table for descriptions of different RAGFlow editions. To download an RAGFlow edition different from `v0.15.0-slim`, update the `RAGFLOW_IMAGE` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `RAGFLOW_IMAGE=infiniflow/ragflow:v0.15.0` for the full edition `v0.15.0`.
+   > The command below downloads the `v0.15.0-slim` edition of the RAGFlow Docker image. Refer to the following table for descriptions of different RAGFlow editions. To download an RAGFlow edition different from `v0.15.0-slim`, update the `RAGFLOW_IMAGE` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `RAGFLOW_IMAGE=Lithium-AI/ragflow:v0.15.0` for the full edition `v0.15.0`.
 
    ```bash
    $ cd ragflow
@@ -239,7 +239,7 @@ Updates to the above configurations require a reboot of all containers to take e
 
 ### Switch doc engine from Elasticsearch to Infinity
 
-RAGFlow uses Elasticsearch by default for storing full text and vectors. To switch to [Infinity](https://github.com/infiniflow/infinity/), follow these steps:
+RAGFlow uses Elasticsearch by default for storing full text and vectors. To switch to [Infinity](https://github.com/Lithium-AI/infinity/), follow these steps:
 
 1. Stop all running containers:
 
@@ -263,9 +263,9 @@ RAGFlow uses Elasticsearch by default for storing full text and vectors. To swit
 This image is approximately 2 GB in size and relies on external LLM and embedding services.
 
 ```bash
-git clone https://github.com/infiniflow/ragflow.git
+git clone https://github.com/Lithium-AI/ragflow.git
 cd ragflow/
-docker build --build-arg LIGHTEN=1 -f Dockerfile -t infiniflow/ragflow:nightly-slim .
+docker build --build-arg LIGHTEN=1 -f Dockerfile -t Lithium-AI/ragflow:nightly-slim .
 ```
 
 ## 🔧 Build a Docker image including embedding models
@@ -273,9 +273,9 @@ docker build --build-arg LIGHTEN=1 -f Dockerfile -t infiniflow/ragflow:nightly-s
 This image is approximately 9 GB in size. As it includes embedding models, it relies on external LLM services only.
 
 ```bash
-git clone https://github.com/infiniflow/ragflow.git
+git clone https://github.com/Lithium-AI/ragflow.git
 cd ragflow/
-docker build -f Dockerfile -t infiniflow/ragflow:nightly .
+docker build -f Dockerfile -t Lithium-AI/ragflow:nightly .
 ```
 
 ## 🔨 Launch service from source for development
@@ -288,7 +288,7 @@ docker build -f Dockerfile -t infiniflow/ragflow:nightly .
 
 2. Clone the source code and install Python dependencies:
    ```bash
-   git clone https://github.com/infiniflow/ragflow.git
+   git clone https://github.com/Lithium-AI/ragflow.git
    cd ragflow/
    ~/.local/bin/poetry install --sync --no-root --with=full # install RAGFlow dependent python modules
    ```
@@ -339,13 +339,13 @@ docker build -f Dockerfile -t infiniflow/ragflow:nightly .
 
 ## 📜 Roadmap
 
-See the [RAGFlow Roadmap 2024](https://github.com/infiniflow/ragflow/issues/162)
+See the [RAGFlow Roadmap 2024](https://github.com/Lithium-AI/ragflow/issues/162)
 
 ## 🏄 Community
 
 - [Discord](https://discord.gg/4XxujFgUN7)
-- [Twitter](https://twitter.com/infiniflowai)
-- [GitHub Discussions](https://github.com/orgs/infiniflow/discussions)
+- [Twitter](https://twitter.com/Lithium-AI)
+- [GitHub Discussions](https://github.com/orgs/Lithium-AI/discussions)
 
 ## 🙌 Contributing
 
