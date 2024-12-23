@@ -5,7 +5,7 @@
 <p align="center">
     <a href="https://x.com/intent/follow?screen_name=Lithium_AI" target="_blank">
         <img src="https://img.shields.io/twitter/follow/Lithium_AI?logo=X&color=%20%23f5f5f5" alt="follow on X(Twitter)">
-
+    </a>
     <a href="https://hub.docker.com/r/Lithium-AI/Lithium_AI" target="_blank">
         <img src="https://img.shields.io/badge/docker_pull-Lithium_AI:v0.15.0-brightgreen" alt="docker pull GregGentschev/Lithium-AI:v0.15.0">
     </a>
