@@ -1,23 +1,16 @@
 <div align="center">
-<a href="https://demo.ragflow.io/">
-<img src="https://x.com/Lithium_AI/photo" width="520" alt="Lithium AI logo">
+<img src="https://x.com/Lithium_AI/photo" width="520" alt="Lithium AI">
 </a>
 </div>
 
 <p align="center">
     <a href="https://x.com/intent/follow?screen_name=Lithium_AI" target="_blank">
         <img src="https://img.shields.io/twitter/follow/Lithium_AI?logo=X&color=%20%23f5f5f5" alt="follow on X(Twitter)">
+
+    <a href="https://hub.docker.com/r/Lithium-AI/Lithium_AI" target="_blank">
+        <img src="https://img.shields.io/badge/docker_pull-Lithium_AI:v0.15.0-brightgreen" alt="docker pull GregGentschev/Lithium-AI:v0.15.0">
     </a>
-    <a href="https://demo.ragflow.io" target="_blank">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Online-Demo-4e6b99">
-    </a>
-    <a href="https://hub.docker.com/r/Lithium-AI/ragflow" target="_blank">
-        <img src="https://img.shields.io/badge/docker_pull-ragflow:v0.15.0-brightgreen" alt="docker pull Lithium-AI/ragflow:v0.15.0">
-    </a>
-    <a href="https://github.com/Lithium-AI/ragflow/releases/latest">
-        <img src="https://img.shields.io/github/v/release/Lithium-AI/ragflow?color=blue&label=Latest%20Release" alt="Latest Release">
-    </a>
-    <a href="https://github.com/Lithium-AI/ragflow/blob/main/LICENSE">
+    <a href="https://github.com/GregGentschev/Lithium-AI/blob/main/LICENSE">
         <img height="21" src="https://img.shields.io/badge/License-Apache--2.0-ffffff?labelColor=d4eaf7&color=2e6cc4" alt="license">
     </a>
 </p>
@@ -52,14 +45,6 @@ data.
 - 2024-11-01 Adds keyword extraction and related question generation to the parsed chunks to improve the accuracy of retrieval.
 - 2024-08-22 Support text to SQL statements through RAG.
 - 2024-08-02 Supports GraphRAG inspired by [graphrag](https://github.com/microsoft/graphrag) and mind map.
-
-## 🎉 Stay Tuned
-
-⭐️ Star our repository to stay up-to-date with exciting new features and improvements! Get instant notifications for new
-releases! 🌟
-<div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/user-attachments/assets/18c9707e-b8aa-4caf-a154-037089c105ba" width="1200"/>
-</div>
 
 ## 🌟 Key Features
 
@@ -139,14 +124,14 @@ releases! 🌟
 
 3. Start up the server using the pre-built Docker images:
 
-   > The command below downloads the `v0.15.0-slim` edition of the Lithium-AI Docker image. Refer to the following table for descriptions of different Lithium-AI editions. To download an RAGFlow edition different from `v0.15.0-slim`, update the `Lithium-AI` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `Lithium-AI=GregGentschev/Lithium-AI:v0.15.0` for the full edition `v0.15.0`.
+   > The command below downloads the `v0.15.0-slim` edition of the Lithium-AI Docker image. Refer to the following table for descriptions of different Lithium-AI editions. To download an Lithium-AI edition different from `v0.15.0-slim`, update the `Lithium-AI` variable accordingly in **docker/.env** before using `docker compose` to start the server. For example: set `Lithium-AI=GregGentschev/Lithium-AI:v0.15.0` for the full edition `v0.15.0`.
 
    ```bash
    $ cd Lithium-AI
    $ docker compose -f docker/docker-compose.yml up -d
    ```
 
-   | RAGFlow image tag | Image size (GB) | Has embedding models? | Stable?                  |
+   | Lithium-AI image tag | Image size (GB) | Has embedding models? | Stable?                  |
    | ----------------- | --------------- | --------------------- | ------------------------ |
    | v0.15.0           | &approx;9       | :heavy_check_mark:    | Stable release           |
    | v0.15.0-slim      | &approx;2       | ❌                    | Stable release           |
@@ -168,10 +153,10 @@ releases! 🌟
     * Running on http://x.x.x.x:9380
     INFO:werkzeug:Press CTRL+C to quit
    ```
-   > If you skip this confirmation step and directly log in to RAGFlow, your browser may prompt a `network anormal`
-   error because, at that moment, your RAGFlow may not be fully initialized.
+   > If you skip this confirmation step and directly log in to Lithium-AI, your browser may prompt a `network anormal`
+   error because, at that moment, your Lithium-AI may not be fully initialized.
 
-5. In your web browser, enter the IP address of your server and log in to RAGFlow.
+5. In your web browser, enter the IP address of your server and log in to Lithium-AI.
    > With the default settings, you only need to enter `http://IP_OF_YOUR_MACHINE` (**sans** port number) as the default
    HTTP serving port `80` can be omitted when using the default configurations.
 6. In [service_conf.yaml.template](./docker/service_conf.yaml.template), select the desired LLM factory in `user_default_llm` and update
@@ -202,7 +187,7 @@ Updates to the above configurations require a reboot of all containers to take e
 
 ### Switch doc engine from Elasticsearch to Infinity
 
-RAGFlow uses Elasticsearch by default for storing full text and vectors. To switch to [Infinity](https://github.com/Lithium-AI/infinity/), follow these steps:
+Lithium-AI uses Elasticsearch by default for storing full text and vectors. To switch to [Infinity](https://github.com/Lithium-AI/infinity/), follow these steps:
 
 1. Stop all running containers:
 
@@ -226,9 +211,9 @@ RAGFlow uses Elasticsearch by default for storing full text and vectors. To swit
 This image is approximately 2 GB in size and relies on external LLM and embedding services.
 
 ```bash
-git clone https://github.com/Lithium-AI/ragflow.git
-cd ragflow/
-docker build --build-arg LIGHTEN=1 -f Dockerfile -t Lithium-AI/ragflow:nightly-slim .
+git clone https://github.com/GregGentschev/Lithium-AI.git
+cd Lithium-AI/
+docker build --build-arg LIGHTEN=1 -f Dockerfile -t GregGentschev/Lithium-AI:nightly-slim .
 ```
 
 ## 🔧 Build a Docker image including embedding models
@@ -236,9 +221,9 @@ docker build --build-arg LIGHTEN=1 -f Dockerfile -t Lithium-AI/ragflow:nightly-s
 This image is approximately 9 GB in size. As it includes embedding models, it relies on external LLM services only.
 
 ```bash
-git clone https://github.com/Lithium-AI/ragflow.git
-cd ragflow/
-docker build -f Dockerfile -t Lithium-AI/ragflow:nightly .
+git clone https://github.com/GregGentschev/Lithium-AI.git
+cd Lithium-AI/
+docker build -f Dockerfile -t Lithium-AI:nightly .
 ```
 
 ## 🔨 Launch service from source for development
@@ -251,9 +236,9 @@ docker build -f Dockerfile -t Lithium-AI/ragflow:nightly .
 
 2. Clone the source code and install Python dependencies:
    ```bash
-   git clone https://github.com/Lithium-AI/ragflow.git
-   cd ragflow/
-   ~/.local/bin/poetry install --sync --no-root --with=full # install RAGFlow dependent python modules
+   git clone https://github.com/GregGentschev/Lithium-AI.git
+   cd Lithium-AI/
+   ~/.local/bin/poetry install --sync --no-root --with=full # install Lithium-AI dependent python modules
    ```
 
 3. Launch the dependent services (MinIO, Elasticsearch, Redis, and MySQL) using Docker Compose:
