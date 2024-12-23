@@ -5,16 +5,8 @@
 </div>
 
 <p align="center">
-  <a href="./README.md">English</a> |
-  <a href="./README_zh.md">简体中文</a> |
-  <a href="./README_ja.md">日本語</a> |
-  <a href="./README_ko.md">한국어</a> |
-  <a href="./README_id.md">Bahasa Indonesia</a>
-</p>
-
-<p align="center">
-    <a href="https://x.com/intent/follow?screen_name=Lithium-AI" target="_blank">
-        <img src="https://img.shields.io/twitter/follow/Lithium-AI?logo=X&color=%20%23f5f5f5" alt="follow on X(Twitter)">
+    <a href="https://x.com/intent/follow?screen_name=Lithium_AI" target="_blank">
+        <img src="https://img.shields.io/twitter/follow/Lithium_AI?logo=X&color=%20%23f5f5f5" alt="follow on X(Twitter)">
     </a>
     <a href="https://demo.ragflow.io" target="_blank">
         <img alt="Static Badge" src="https://img.shields.io/badge/Online-Demo-4e6b99">
@@ -122,7 +114,7 @@ releases! 🌟
 ## 🔎 System Architecture
 
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/Lithium-AI/ragflow/assets/12318111/d6ac5664-c237-4200-a7c2-a4a00691b485" width="1000"/>
+<img src="https://github.com/infiniflow/ragflow/assets/12318111/d6ac5664-c237-4200-a7c2-a4a00691b485" width="1000"/>
 </div>
 
 ## 🎬 Get Started
